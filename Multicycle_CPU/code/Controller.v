@@ -243,7 +243,6 @@ module Controller(reset, clk, OpCode, Funct,
             LuiOp <= 0;
             ALUSrcA <= 0;
             ALUSrcB <= 0;
-            ALUOp <= 0;
             PCSource <= 0;
             EPCWrite <= 0;
             ErrTargetWrite <= 0;
