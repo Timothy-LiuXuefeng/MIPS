@@ -292,7 +292,7 @@ module Controller(reset, clk, OpCode, Funct,
             ALUSrcA <= 2'b01;
             ALUSrcB <= 2'b10;
             LuiOp <= (OpCode == lui ? 1 : 0);
-            ExtOp <= (OpCode == addiu || OpCode == sltiu ? 1 : 1);
+            ExtOp <= (OpCode == andi ? 0 : 1);
 
             PCWrite <= 0;
             PCWriteCond <= 0;
